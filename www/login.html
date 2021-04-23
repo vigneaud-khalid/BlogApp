@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <script>
+        var attempt = 2; // Variable to count number of attempts.
+        // Below function Executes on click of login button.
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "k" && password == "k") {
+                alert("Login successfully");
+                window.location = "home.html"; // Redirecting to other page.
+                return false;
+            }
+            else {
+                attempt--;// Decrementing by one.
+                alert("You have left " + attempt + " attempt;");
+                // Disabling fields after 2 attempts.
+                if (attempt == 0) {
+                    document.getElementById("username").disabled = true;
+                    document.getElementById("password").disabled = true;
+                    document.getElementById("submit").disabled = true;
+                    window.location = "end.html";
+                }
+            }
+        }
+    </script>
+
+    <div class="container">
+        <div class="main">
+            <h4>LION CUBS</h4>
+            <h4>want you to log in</h4>
+            <form id="form_id" method="post" name="myform">
+                <label>User Name :</label>
+                <input type="text" name="username" id="username" />
+                <label>Password :</label>
+                <input type="password" name="password" id="password" />
+                <input type="button" value="Login" id="submit" onclick="validate()" />
+            </form>
+            <hr>
+            <span><b class="note"></b>username  = k      and password = k  <br /></span>
+            <hr>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/shibl_11.jpg">
+                    <!-- <span class="card-title" id="title">
+                        <ul id="titre"></ul>
+                    </span>
+                    <button id="affiche-nom">username  = k   </button><button id="affiche-description"> and password = k </button> -->
+
+                </div>
+                <div class="card-content">
+                    <p> </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <div class="container">
+        <div class="main">
+            <h4>one day, I'll be greater</h4>
+
+        </div>
+    </div>
+
+
+    <script src="cordova.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/materialize.js"></script>
+</body>
+
+</html>

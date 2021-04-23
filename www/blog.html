@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Home</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper  purple lighten-1">
+      <a href="#!"  class="brand-logo right" src="img/logo.png">App</a>
+      <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">&#xe16d</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li class="active"><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="information.html">Information</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li class="active"><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="information.html">Information</a></li>
+  </ul>
+
+
+<div class="art">
+  <div id="art-item">
+    <h1 id="titreArt"></h1>
+    <img id="imgArt" >
+    <p id="descripArt" ></p>
+    <button id="showArticle"></button>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="app">
+
+
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/shibl_T_10.png " id ="1">
+            <span class="card-title" id="title"> <ul id="titre"></ul></span>
+            <button id="affiche-nom">Afficher le nom</button><button id="affiche-description">Afficher la description</button>
+
+          </div>
+          <div class="card-content">
+            <p> </p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ <!--  <h1>Blog Page</h1>
+  <div id="deviceready" class="blink">
+    <p class="event listening">Connecting to Device</p>
+    <p class="event received">Device is Ready</p>
+  </div> -->
+
+
+
+
+
+  <script src="cordova.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/materialize.js"></script>
+</body>
+
+</html>
